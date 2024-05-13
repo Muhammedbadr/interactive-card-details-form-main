@@ -1,5 +1,5 @@
+const form = document.querySelector('form');
 // Select the form element
-const form = document.querySelector('.form');
 
 // Add event listener to form submission
 form.addEventListener('submit', function(event) {
@@ -92,6 +92,11 @@ form.addEventListener('submit', function(event) {
         complete.classList.remove('hidden');
         // Reset the form
         form.reset();
+
+
+
+        const wrapper = document.querySelector(".wrapper")
+        wrapper.remove("wrapper")
     }
     
 });
